@@ -41,12 +41,12 @@
 				pinchZoom: true,
 				depth: 1.1,
 				textHeight:26,
-				maxSpeed: 0.08,
 				zoom: 0.8,
 				freezeDecel: true,
 				minspeed: 0.01,
 				maxSpeed: 0.08,
-				initial: [0.2,-0.1]
+				initial: [0.2,-0.1],
+				decel: 0.3
 			});
 		} catch(e) {
 			//something went wrong, hide the canvas container
