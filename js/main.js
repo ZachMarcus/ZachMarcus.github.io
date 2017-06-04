@@ -39,10 +39,14 @@
 				outlineColour: '#363636',
 				reverse: true,
 				pinchZoom: true,
-				depth: 0.8,
+				depth: 1.1,
 				textHeight:26,
 				maxSpeed: 0.08,
-				zoom: 0.8
+				zoom: 0.8,
+				freezeDecel: true,
+				minspeed: 0.01,
+				maxSpeed: 0.08,
+				initial: [0.2,-0.1]
 			});
 		} catch(e) {
 			//something went wrong, hide the canvas container
