@@ -1,61 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<!-- SITE TITLE -->
-	<title>Zachary Marcus</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="Personal Webpage">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Zachary Marcus">
+		<meta name="description" content="Computer engineer & hardware enthusiast">
+		<meta name="theme-color" content="#00d1b2">
+		<meta property="og:title" content="Zachary Marcus">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://zacharymarcus.xyz/">
+		<meta property="og:image" content="http://zacharymarcus.xyz/img/zachary-marcus.jpg">
+		<meta property="og:image:type" content="image/jpeg">
+		<meta property="og:image:width" content="1000">
+		<meta property="og:image:height" content="1259">
+		<meta property="og:description" content="Computer engineer & hardware enthusiast">
+		<title>Zachary Marcus</title>
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+		<link rel="stylesheet" href="css/main.css">-->
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="icon" href="img/favicon3.ico" sizes="32x32">
+		<script defer src="js/AnchorScroller.js"></script>
+		<script defer src="js/tagcanvas.min.js"></script>
+		<script defer src="js/main.js"></script>
 
-	<!-- STYLESHEET CSS FILES -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-
-<!-- navigation section -->
-<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
-	<div class="container">
-		<div class="navbar-header">
-			<a class="navbar-brand"><span class="bold">More to Come<span style="color:#FFD321">!</span></span></a>
-		</div>
-		<div>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a style="text-align:center" href="https://www.linkedin.com/in/zacharyjmarcus" class="smoothScroll">LinkedIn</a></li>
-			</ul>
-		</div>
-	</div>
-</section>
-
-<!-- home section -->
-<section id="home">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<hr>
-				<h3><span style="color:#55acee" class="bold">Temporary Landing Page</h3>
-				<h1 class="heading"><em>Zachary Marcus</em></h1>
-				<a href="zachary_marcus_resume.pdf" class="smoothScroll btn btn-default">Resume</a>
+		<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">		
+	</head>
+	<body>
+		<section id="top" class="hero is-fullheight is-default">
+			<div class="hero-head">
+				<div class="container">
+					<nav class="nav has-shadow">
+						<div class="container">
+							<div class="nav-left">
+								<a id="top-btn" class="nav-item" href="zachary_marcus_resume.pdf" title="Check it out">&emsp;&emsp;<i class="fa fa-download fa-lg" style="color:#551a8b"></i>&emsp;Resume</a>
+							</div>
+							<span class="nav-toggle">
+								<span></span>
+								<span></span>
+								<span></span>
+							</span>
+							<div class="nav-right nav-menu">
+								<a class="nav-item is-tab" href="#work-experience">Work Experience</a>
+								<a class="nav-item is-tab" href="#projects">Projects</a>
+								<a class="nav-item is-tab" href="#education">Education</a>
+								<a class="nav-item is-tab" href="#volunteering">Volunteer Experience</a>
+							</div>
+						</div>
+					</nav>
+				</div>
 			</div>
-		</div>
-	</div>		
-</section>
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<div class="columns is-vcentered">
+						<div class="column is-three-fourths is-centered has-nice-link" itemscope itemtype="http://schema.org/Person">
+							<img id="profile-pic" src="img/zachary-marcus.jpg" width="140" height="140" itemprop="image">
+							<h1 class="title is-2" itemprop="name">Zachary Marcus</h1>
+							<br>
+							<h3 class="subtitle is-4" itemprop="description">Computer engineer &amp; hardware enthusiast</h3>
+							<h3 class="subtitle is-4" itemprop="description">Fourth year student at Northeastern University</h3>
+							<h3 class="subtitle is-4" itemprop="description">Intern at MIT Lincoln Laboratory</h3>
+							<h3 class="subtitle is-4" itemprop="description">Interests in high-performance computing, embedded platforms, and algorithm development</h3>
+							<h3 class="subtitle is-4" itemprop="description">Seeking internship opportunities for the January - August 2018 timeframe</h3>
+							<br>
+							<p class="has-text-centered">
+								<a class="button is-large is-white" href="zachary_marcus_resume.pdf"><span class="icon" style="color:#00ad93">
+										<i class="fa fa-download"></i>
+									</span>
+									<span>Resume</span>
+								</a>
+								<a class="button is-large is-white" href="https://github.com/zachmarcus">
+									<span class="icon" style="color:#00ad93">
+										<i class="fa fa-github"></i>
+									</span>
+									<span>Projects</span>
+								</a>
+								<a class="button is-large is-white" href="https://www.linkedin.com/in/zacharyjmarcus">
+									<span class="icon" style="color:#00ad93">
+										<i class="fa fa-linkedin-square"></i>
+									</span>
+									<span>LinkedIn</span>
+								</a>
+								<a class="button is-large is-white no-underline" href="mailto:zacharyjmarcus@gmail.com">
+									<span class="icon" style="color:#00ad93">
+										<i class="fa fa-envelope"></i>
+									</span>
+									<span>Contact</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero-foot">
+				<div class="container">
+					<div class="tabs is-centered">
+						<ul style="padding-bottom:1rem">
+							<li>
+								<a href="#work-experience"><i style="color:#551a8b" id="scroll-hint" class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section hero is-fullheight is-primary is-bold has-nice-link">
+			<div id="work-experience" class="container has-text-centered">
+				<h1 class="title is-2">Work Experience</h1>
+				<br>
+
+				<div class="columns is-multiline">
+					<div class="column is-mobile is-half-tablet is-half-desktop">
+						<div class="box">
+							<figure class="image">
+								<img src="img/mitll.jpg">
+							</figure>
+							<h2 class="title is-3"><a href="#">MIT Lincoln Laboratory</a></h2>
+							<p class="subtitle is-6">I've been on co-op at Lincoln Laboratory since this January, working on a number of interesting projects. I've had the opportunity to write and evaluate large scale parallel applications using multi-process and multithreading paradigms. I am also developing software to prototype novel radar signal processing techniques and improve their performance enough to demonstrate their viability. I'm currently leveraging and contributing directly to several communication libraries.</p>
+						</div>
+					</div>
+					<div class="column is-mobile is-half-tablet is-half-desktop">
+						<div class="box">
+							<figure class="image">
+								<img src="img/amd.jpg">
+							</figure>
+							<h2 class="title is-3"><a href="#">Advanced Micro Devices, Inc.</a></h2>
+							<p class="subtitle is-6">I did my first co-op at Advanced Micro Devices (AMD) from January 2016 - August 2016, working on the shader compiler team there. I designed a tool to simplify driver performance analysis and to provide dynamic analysis of applications' run-time information. I contributed to the team infrastructure and tools through that tool as well as several other developments, but I also got the chance to put in some work into the compiler itself. If you play games on AMD hardware, including the XBox One and the PlayStation 4, I've contributed directly to the drivers running on it.</p>
+						</div>
+					</div>
+					<div class="column is-mobile is-half-tablet is-half-desktop is-centered">
+						<div class="box">
+							<figure class="image">
+								<img src="img/nucar.jpg">
+							</figure>
+							<h2 class="title is-3"><a href="#">Northeastern University Computer Architecture Research Laboratory</a></h2>
+							<p class="subtitle is-6">I started working in the Northeastern University Computer Architecture Research Laboratory in May 2015, and have been a part of it in some capacity since then. At first, I worked on an Android application and set of executables to perform encryption on mobile devices' Graphics Processing Units to assist in developing side channel analysis techniques against a specific tablet's chipset. I also expanded an Android application for simplified GPU benchmarking, porting a benchmark suite designed for heterogeneous computing architectures. <br>I've since started participating in several yearly student cluster competitions, as seen <a href="#projects">here.</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section hero is-fullheight is-default is-bold has-nice-link">
+			<div id="projects" class="container has-text-centered">
+				<h1 class="title is-2">Projects</h1>
+				<p>See <a class="no-underline" href="https://github.com/zachmarcus"><span class="icon"><i class="fa fa-github"></i></span></a> for what else I'm up to.</p>
+				<br>
+
+				<div class="columns is-multiline">
+					<div class="column is-mobile is-half-tablet is-one-third-desktop">
+						<div class="box" id="project-box">
+							<figure class="image">
+								<img src="img/sc17-sized.png">
+							</figure>
+							<h2 class="title is-3"><a href="https://www.youtube.com/watch?v=_mjCMH_jpAQ&feature=youtu.be">Supercomputing</a></h2>
+							<p class="subtitle is-6">I have attended several international student cluster competitions through the International Conferences for High Performance Computing; the competitions pit students from across the world against each other to see who can best optimize and run their applications. My first two competitions presented their own challenges, with multiple hardware failures - our hardware didn't even arrive for the second one, so I went around with other teammates and scrounged workstation parts to make a franken-supercomputer. I've gotten a deeper understanding of hardware and software stack knowledge, matrix and communication algorithms. This year I'll be working on high performance linpack and replicating the results from a paper on a molecular dynamics simulator.</p>
+						</div>
+					</div>
+					<div class="column is-mobile is-half-tablet is-one-third-desktop">
+						<div class="box" id="project-box">
+							<figure class="image">
+								<img src="img/planetary-lander.jpg">
+							</figure>
+							<h2 class="title is-3"><a href="https://github.com/DJSlice64/Planetary-Lander/tree/master">Planetary Lander</a></h2>
+							<p class="subtitle is-6">I had the opportunity this past year to compete in the FOGE Battle of the Rockets Planetary Lander competition, which has students develop and design a lander that has to be deployed from a rocket over 1000 feet in the air, land, upright itself autonomously, and collect a set of data. I worked on a team through Northeastern's AIAA organization, prototyping the hardware setup to be used on the lander and on the ground station, writing code for the microcontrollers, and working on the telemetry collection.</p>
+							<br><br><a class="no-underline" href="https://github.com/DJSlice64/Planetary-Lander/tree/master" style="display:inline-block;overflow:hidden;background:url(img/git-logo.png) no-repeat;width:135px;height:71px;background-size:contain;"></a>
+						</div>
+					</div>
+					<div class="column is-mobile is-half-tablet is-one-third-desktop">
+						<div class="box" id="project-box">
+							<figure class="image">
+								<img src="img/resource-finder.png">
+							</figure>
+							<h2 class="title is-3"><a href="https://github.com/ZachMarcus/Resource-Finder">Resource Finder</a></h2>
+							<p class="subtitle is-6">At the 2017 Hardware Hackathon hosted by Northeastern University, I teamed up with 3 friends to develop Resource-Finder. It's a proof of concept for a simple interface that helps students find campus resources, but we demonstrated it by tracking in real time the location and status of the web-app user as well as every printer on campus; we also set up a reflective IR sensor along a desk to determine when the seat at that desk became available. The project involved web scrapers, networking, communication over XBee radios, and a simple web service. We took home first place!</p>
+							<a class="no-underline" href="https://github.com/ZachMarcus/Resource-Finder" style="display:inline-block;overflow:hidden;background:url(img/git-logo.png) no-repeat;width:135px;height:71px;background-size:contain;"></a>
+						</div>
+					</div>
+					<div class="column is-mobile is-half-tablet is-one-third-desktop">
+						<div class="box" id="project-box">
+							<figure class="image">
+								<img src="img/rise-poster.jpg">
+							</figure>
+							<h2 class="title"><a href="https://github.com/ZachMarcus/RSA-Native-On-Android">Side Channel Analysis</a></h2>
+							<p class="subtitle is-6">I worked on an Android application and set of executables to perform encryption on mobile devices' Graphics Processing Units to assist in developing side channel analysis techniques against a specific tablet's chipset. The work we did on this - setting up a framework and showing some initial results - led to a poster that was presented at Northeastern's Research, Innovation, and Scholarship Expo, where myself and another undergraduate on the team presented our poster to a panel of judges.</p>
+							<br><a class="no-underline" href="https://github.com/ZachMarcus/RSA-Native-On-Android" style="display:inline-block;overflow:hidden;background:url(img/git-logo.png) no-repeat;width:135px;height:71px;background-size:contain;"></a>
+						</div>
+					</div>
+					<div class="column is-mobile is-half-tablet is-one-third-desktop">
+						<div class="box" id="project-box">
+							<figure class="image">
+								<img src="img/hp-helion.jpg">
+							</figure>
+							<h2 class="title"><a href="https://devpost.com/software/helionhack">Boston Vity View</a></h2>
+							<p class="subtitle is-6">HP hosted a hackathon in August 2015, with the stipulation that the product run entirely on their cloud hosting service. So our small team of 3 cooked up a simple Python webapp, displaying the data provided by https://data.boston.gov/ overlaid onto an interactive map of Boston. We used k-means clustering to display the data as a heat map, showing hotspots of differing data, like how crime rates correlated with property values in an area.</p>
+							<br><br><a class="no-underline" href="https://github.com/ZachMarcus/HelionHack" style="display:inline-block;overflow:hidden;background:url(img/git-logo.png) no-repeat;width:135px;height:71px;background-size:contain;"></a>
+						</div>
+					</div>
+					<div class="column is-mobile is-half-tablet is-one-third-desktop">
+						<div class="box" id="project-box">
+							<figure class="image">
+								<img src="img/piano-lights.jpg">
+							</figure>
+							<h2 class="title"><a href="https://devpost.com/software/piano-lights">MakeBU Piano Lights</a></h2>
+							<p class="subtitle is-6">In March of 2015, I attended my first hackathon, accompanying three other friends to the MakeBU Hackathon. There, we designed, writed, and programmed a device to help learn songs on the piano; our product was an untethered piece of hardware to be placed on any standard-sized piano, with lights indicating which keys needed to be pressed next. I aided in designing the hardware, using the 3D printer, and in wiring. At the end of the 24 hours, we finished, I dubbed it "Piano Lights", and we walked away with first place.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--<section class="hero is-fullheight is-primary">
+			<div id="education" class="hero-body">
+				<div class="container has-text-centered is-dark-text has-nice-link">
+					<br><br> 586 x 600
+					<img id="northeastern-icon" src="img/Northeastern-seal.png" width="293" height="300">
+					<h3 class="title is-3">I'm a 4th year at <a href="https://www.northeastern.edu/"><strong>Northeastern University</strong></a>, graduating in 2019.</h3>
+					<ul>
+						<li>
+							<div>
+								<h4>Candidate for bachelor's</h4>
+								<p>Dual Computer Engineering and Computer Science</p>
+								<p>College of Engineering</p>
+								<p>GPA: 3.8 / 4.0</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h4>On-Campus Involvement</h4>
+								<p>IEEE Webmaster</p>
+								<p>AIAA - Planetary Lander project</p>
+								<p>Civic Engagement Program</p>
+								<p>Honors Program</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h4>Relevant Coursework</h4>
+								<p>High Performance Computing</p>
+								<p>Object Oriented Design</p>
+								<p>Computer Systems</p>
+								<p>Computer Networks</p>
+								<p>Computer Algorithms</p>
+								<p>Embedded Design: Enabling Robotics</p>
+								<p>Digital Logic Design</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>-->
+
+		<section class="section hero is-fullheight is-primary is-bold has-nice-link">
+			<div id="education" class="container is-dark-text has-text-centered">
+				<br><br><br><br>
+				<img id="northeastern-icon" src="img/Northeastern-seal.png" width="293" height="300">
+				<h3 id="bigger-words" class="title is-3">I'm a 4th year at <a href="https://www.northeastern.edu/"><strong>Northeastern University</strong></a>, graduating in 2019.</h3>
+
+				<div id="information">
+					<p>Candidate for Bachelor's in Dual Computer Engineering and Computer Science</p>
+					<p><strong>GPA: 3.8 / 4.0</strong></p>
+					<p>Honors Program</p>
+					<p>IEEE Webmaster</p>
+					<p>AIAA - Planetary Lander</p>
+					<p>Civic Engagement Program</p>
+					<p>High Performance Computing</p>
+					<p>Embedded Design</p>
+				</div>
+			</div>
+		</section>
 
 
-<!-- JAVASCRIPT JS FILES -->	
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/isotope.js"></script>
-<script src="js/imagesloaded.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
 
-</body>
+
+		<!--
+		Hostelling International Boston - Volunteer. Lead tour groups through events in the Boston area. You can catch me once a week leading a pub crawl to some of my favorite spots.
+		Generation Citizen - Democracy Coach and Cohort Leader. Advised on how to best deliver an action-civics based education to students. Communicated with community partners and local figures to determine solutions to community problems. Guided classes in projects tackling community issues to develop students' advocacy skills.
+		Citizen Teaching - Robotics Instructor. Guided middle school class in use of engineering thought and writing basic code for their design
+		-->
+		<section class="section hero is-fullheight is-default is-bold ">
+			<div id="volunteering" class="container has-text-centered">
+				<h1 class="title is-2">Volunteer Experience</h1>
+				<br>
+
+				<div class="columns is-multiline has-nice-link">
+					<div class="column is-mobile is-one-third-tablet is-one-third-desktop">
+						<h2 class="title is-3"><a href="#">Hostelling International Boston</a></h2>
+						<p class="subtitle is-6">Weekly Volunteer</p>
+						<div style="text-align:left">
+							<p>I lead tour groups through interesting activities in the Boston area. These include taking them to bars, comedy shows, and whatever else they might want. You can catch me once a week leading a pub crawl to some of my favorite spots.</p>
+						</div>
+					</div>
+					<div class="column is-mobile is-one-third-tablet is-one-third-desktop">
+						<h2 class="title is-3"><a href="#">Generation Citizen</a></h2>
+						<p class="subtitle is-6">Democracy Coach / Cohort Leader</p>
+						<div style="text-align:left">
+							<p>I advised other democracy coaches on how to best deliver an action-civics based education to students. In that capacity as cohort leader and just as a democracy coach, I communicated with community partners and local figures to determine solutions to community problems.</p>
+						</div>
+					</div>
+					<div class="column is-mobile is-one-third-tablet is-one-third-desktop is-centered-tablet">
+						<h2 class="title is-3"><a href="#">Citizen Teaching</a></h2>
+						<p class="subtitle is-6">Robotics Instructor</p>
+						<div style="text-align:left">
+							<p>I guided middle school classes in the use of engineering thought and in writing basic control code for their robotics designs. It was a lot of fun for the students and for me - I got to work with them and inspire some truly creative designs, and they got to pit their robots against one another in a robo sumo battle for the ages.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h3 class="title is-centered is-3">Links</h3>
+			<div id="myCanvasContainer" class="container has-text-centered is-full-width">
+				<canvas id="myCanvas" class="is-full-width">
+					<p>Your browser does not support the HTML5 canvas</p>
+				</canvas>
+			</div>
+			<div id="tags">
+				<ul>
+					<li><a style="color:#00ad93" href="zachary_marcus_resume.pdf">Resume</a></li>
+					<li><a style="color:#ad2136" href="https://www.linkedin.com/in/zacharyjmarcus/">LinkedIn</a></li>
+					<li><a style="color:#54ad00" href="https://github.com/ZachMarcus">Github</a></li>
+					<li><a style="color:#ad2136" href="https://github.com/DJSlice64/Planetary-Lander">Planetary Lander</a></li>
+					<li><a style="color:#54ad00" href="https://github.com/ZachMarcus/Resource-Finder">Resource Finder</a></li>
+					<li><a style="color:#551a8b" href="https://www.youtube.com/watch?v=_mjCMH_jpAQ&feature=youtu.be">Supercomputing</a></li>
+					<li><a style="color:#551a8b" href="img/pub-crawl.jpg">Pub Crawl</a></li>
+				</ul>
+			</div>
+			<a href="#top">
+				<i style="float:right; padding-right:1em; padding-top:.2em" id="scroll-up" class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
+			</a>
+		</section>
+
+	</body>
 </html>
