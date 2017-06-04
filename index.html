@@ -19,7 +19,8 @@
 		<link rel="stylesheet" href="css/main.css">-->
 		<link rel="stylesheet" href="css/main.min.css">
 		<link rel="icon" href="img/favicon3.ico" sizes="32x32">
-		<script defer src="js/AnchorScroller.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/smoothscroll.js"></script
 		<script defer src="js/tagcanvas.min.js"></script>
 		<script defer src="js/main.js"></script>
 
@@ -40,10 +41,10 @@
 								<span></span>
 							</span>
 							<div class="nav-right nav-menu">
-								<a class="nav-item is-tab" href="#work-experience">Work Experience</a>
-								<a class="nav-item is-tab" href="#projects">Projects</a>
-								<a class="nav-item is-tab" href="#education">Education</a>
-								<a class="nav-item is-tab" href="#volunteering">Volunteer Experience</a>
+								<a class="nav-item is-tab smoothScroll" href="#work-experience">Work Experience</a>
+								<a class="nav-item is-tab smoothScroll" href="#projects">Projects</a>
+								<a class="nav-item is-tab smoothScroll" href="#education">Education</a>
+								<a class="nav-item is-tab smoothScroll" href="#volunteering">Volunteer Experience</a>
 							</div>
 						</div>
 					</nav>
@@ -96,7 +97,7 @@
 					<div class="tabs is-centered">
 						<ul style="padding-bottom:1rem">
 							<li>
-								<a href="#work-experience"><i style="color:#551a8b" id="scroll-hint" class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i></a>
+								<a><i style="color:#551a8b" id="scroll-hint" class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i></a>
 							</li>
 						</ul>
 					</div>
@@ -325,7 +326,7 @@
 					<li><a style="color:#551a8b" href="img/pub-crawl.jpg">Pub Crawl</a></li>
 				</ul>
 			</div>
-			<a href="#top">
+			<a href="#top" class="smoothScroll">
 				<i style="float:right; padding-right:1em; padding-top:.2em" id="scroll-up" class="fa fa-chevron-circle-up fa-4x" aria-hidden="true"></i>
 			</a>
 		</section>

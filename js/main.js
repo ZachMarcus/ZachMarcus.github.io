@@ -12,10 +12,6 @@
 	});
 
 
-	// Smooth anchor scroll
-	new AnchorScroller({
-		checkParent:true
-	})
 })();
 
 (function () {

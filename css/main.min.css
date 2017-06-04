@@ -76,6 +76,7 @@ a {
 #scroll-hint {
 	opacity: 0.8;
 	transition: opacity 1.0s ease-out !important;
+	cursor: default;
 }
 
 /* uncss:ignore */
