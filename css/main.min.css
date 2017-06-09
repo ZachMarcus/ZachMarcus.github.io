@@ -142,3 +142,28 @@ a {
 	border-color: #551a8b;
 	box-shadow: 0 0 9px;
 }
+
+
+
+.github-link {
+	margin-top:auto;
+}
+
+.nav {
+	position: fixed !important;
+	top:0;
+	left:0;
+	right:0;
+	background-color:#ffffff;
+}
+
+#nav-top {
+	opacity:1.0;
+	background-color:#ffffff;
+	flex:none;
+	width:100%;
+}
+
+#top {
+	background-color:#ffffff;
+}
