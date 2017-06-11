@@ -96,6 +96,7 @@ a {
 #northeastern-icon {
 	margin-top: -80px;
 	margin-bottom: 20px;
+	filter:brightness(0%);
 }
 
 #projects p {
