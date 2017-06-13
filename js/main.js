@@ -55,3 +55,10 @@
 	}
 	document.addEventListener('DOMContentLoaded', makeCanvas);
 })();
+
+
+function scrollToDiv(element) {
+	element = element.replace("link", "");
+	$('html,body').unbind().animate({scrollTop: $(element).offset().top-50},'slow');
+}
+
