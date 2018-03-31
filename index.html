@@ -272,6 +272,8 @@
 		    e.preventDefault();
 		    // top position relative to the document
 		    var pos = $id.offset().top;
+		    // now calculate the offset for the navbar
+		    pos = pos - $("#nav-top").height() - 18;
 		    // animated top scrolling
 		    $('body, html').animate(
 		    	{scrollTop: pos},
