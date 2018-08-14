@@ -1,4 +1,4 @@
-﻿# [zacharymarcus.xyz](http://www.zacharymarcus.xyz)
+﻿# [zmarcus.com](https://www.zmarcus.com)
 
 > Personal website for Zachary Marcus
 
