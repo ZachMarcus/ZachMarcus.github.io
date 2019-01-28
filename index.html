@@ -1,284 +1,257 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="author" content="Zachary Marcus">
-		<meta name="description" content="Computer engineer & hardware enthusiast">
-		<meta name="theme-color" content="#00d1b2">
-		<meta property="og:title" content="Zachary Marcus">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://zmarcus.com/">
-		<meta property="og:image" content="https://zmarcus.com/img/zachary-marcus.jpg">
-		<meta property="og:image:type" content="image/jpeg">
-		<meta property="og:image:width" content="1000">
-		<meta property="og:image:height" content="1259">
-		<meta property="og:description" content="Computer engineer & hardware enthusiast">
-		<title>Zachary Marcus</title>
-		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-		<link rel="stylesheet" href="css/main.css">-->
-		<link rel="stylesheet" href="css/main.min.css">
-		<link rel="icon" href="img/favicon3.ico" sizes="32x32">
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script defer src="js/easings.min.js"></script>
-		<script defer src="js/main.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zachary Marcus</title>
 
-		<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">		
-	</head>
-	<body>
-		<div id="site-wrapper">
-			<section id="top" class="hero is-fullheight is-default">
-				<div class="hero-head">
-					<div class="container">
-						<nav class="nav has-shadow" id="nav-top">
-							<div class="container">
-								<div class="nav-left">
-									<a id="top-btn" class="nav-item" href="zachary_marcus_resume.pdf" title="Check it out">&emsp;&emsp;<i class="fa fa-download fa-lg" style="color:#551a8b"></i>&emsp;Resume</a>
-								</div>
-								<span class="nav-toggle">
-									<span></span>
-									<span></span>
-									<span></span>
-								</span>
-								<div class="nav-right nav-menu">
-									<a class="nav-item is-tab smoothScroll" href="#top">About</a>
-									<a class="nav-item is-tab smoothScroll" href="#education">Education</a>
-									<a class="nav-item is-tab smoothScroll" href="#projects">Projects</a>
-									<a class="nav-item is-tab smoothScroll" href="#work-experience">Work Experience</a>
-								</div>
-							</div>
-						</nav>
-					</div>
-				</div>
-				<div class="hero-body">
-					<div class="container has-text-centered">
-						<div class="columns is-vcentered">
-							<div class="column is-three-fourths is-centered has-nice-link" itemscope itemtype="https://schema.org/Person">
-								<br><br><br><br>
-								<img id="profile-pic" src="img/zachary-marcus.jpg" width="140" height="140" itemprop="image">
-								<h1 class="title is-2" itemprop="name">Zachary Marcus</h1>
-								<br>
-								<h3 class="subtitle is-4" itemprop="description">Computer engineer</h3>
-								<h3 class="subtitle is-4" itemprop="description">Interests in high-performance computing and embedded development</h3>
-								<br>
-								<p class="has-text-centered">
-									<a class="button is-large is-white" href="zachary_marcus_resume.pdf"><span class="icon" style="color:#00ad93">
-											<i class="fa fa-download"></i>
-										</span>
-										<span>Resume</span>
-									</a>
-									<a class="button is-large is-white" href="https://github.com/zachmarcus">
-										<span class="icon" style="color:#00ad93">
-											<i class="fa fa-github"></i>
-										</span>
-										<span>Projects</span>
-									</a>
-									<a class="button is-large is-white" href="https://www.linkedin.com/in/zacharyjmarcus">
-										<span class="icon" style="color:#00ad93">
-											<i class="fa fa-linkedin-square"></i>
-										</span>
-										<span>LinkedIn</span>
-									</a>
-									<a class="button is-large is-white no-underline" href="mailto:zacharyjmarcus@gmail.com">
-										<span class="icon" style="color:#00ad93">
-											<i class="fa fa-envelope"></i>
-										</span>
-										<span>Contact</span>
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="hero-foot">
-					<div class="container">
-						<div class="tabs is-centered">
-							<ul style="padding-bottom:1rem">
-								<li>
-									<a><i style="color:#551a8b" id="scroll-hint" class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+    <link href="favicon.png" rel=icon>
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-			<section class="section hero is-fullheight is-primary is-bold has-nice-link">
-				<div id="education" class="container is-dark-text has-text-centered">
-					<br><br><br><br>
-					<img id="northeastern-icon" src="img/Northeastern-seal.png" width="293" height="300">
-					<h3 id="bigger-words" class="title is-3">I'm a senior at <a href="https://www.northeastern.edu/"><strong>Northeastern University</strong></a>.</h3>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
 
-					<div id="information">
-						<p>Candidate for Bachelor's in Dual Computer Engineering and Computer Science</p>
-						<p><strong>GPA: 3.8 / 4.0</strong></p>
-						<p><strong>Google</strong> Software Engineering Intern</p>
-						<p><strong>Facebook</strong> Software Engineering Intern</p>
-						<p><strong>MIT Lincoln Laboratory</strong> Software Engineering Co-op</p>
-						<p><strong>Advanced Micro Devices</strong> Software Engineering Co-op</p>
-						<p>IEEE Webmaster</p>
-						<p>Northeastern Honors Program</p>
-						<p>Civic Engagement Program</p>
-					</div>
-				</div>
-			</section>
+<!-- Page Preloader -->
+<div id="preloader">
+    <div id="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
 
-			<section class="section hero is-fullheight is-default is-bold has-nice-link">
-				<div id="projects" class="container has-text-centered">
-					<h1 class="title is-2">Projects</h1>
-					<p>See <a class="no-underline" href="https://github.com/zachmarcus"><span class="icon"><i class="fa fa-github"></i></span></a> for what else I'm up to.</p>
-					<br>
+<div class="columns-block container">
+<div class="left-col-block blocks">
+    <header class="header theiaStickySidebar">
+        <div class="profile-img">
+            <img src="img/zachary-marcus.jpg" class="img-responsive" alt=""/>
+        </div>
+        <div class="content">
+            <span class="lead"><h2>Hi! I'm Zach.</h2></span>
 
-					<div class="columns is-multiline">
-						<div class="column is-mobile is-half-tablet is-one-third-desktop">
-							<div class="box" id="project-box">
-								<figure class="image">
-									<img src="img/sc17-sized.png">
-								</figure>
-								<h2 class="title is-3"><a href="https://www.youtube.com/watch?v=_mjCMH_jpAQ&feature=youtu.be">Supercomputing</a></h2>
-								<p class="subtitle is-6">I have attended four international student cluster competitions through the International Conferences for High Performance Computing; the competitions pit students from across the world against each other to see who can best optimize and run their applications. Each competition presented its own challenges, with multiple hardware failures - our hardware didn't even arrive for the second one, so we scrounged workstation parts to build a franken-computer. I've gotten a deeper understanding of hardware and software stacks, matrix optimizations and communication algorithms. I broke the Linpack competition record in Frankfurt, Germany last year and was invited to submit my results on the LAMMPS molecular dynamics simulator to the Parallel Computing journal.</p>
-							</div>
-						</div>
-						<div class="column is-mobile is-half-tablet is-one-third-desktop">
-							<div class="box" id="project-box">
-								<div>
-									<figure class="image">
-										<img src="img/planetary-lander.jpg">
-									</figure>
-									<h2 class="title is-3"><a href="https://github.com/DJSlice64/Planetary-Lander/tree/master">Planetary Lander</a></h2>
-									<p class="subtitle is-6">I had the opportunity last year to compete in the FOGE Battle of the Rockets Planetary Lander competition, which has students develop and design a lander that has to be deployed from a rocket over 1000 feet in the air, land, upright itself autonomously, and collect a set of data. I worked on a team through Northeastern's AIAA organization, prototyping the hardware setup to be used on the lander and on the ground station, writing code for the microcontrollers, and working on the telemetry collection.</p>
-								</div>
-								<div class="columns">
-								<div class="column github-link">
-								    <br><br>
-									<a class="button is-large is-white" href="https://github.com/DJSlice64/Planetary-Lander/tree/master">
-										<span class="icon" style="color:#00ad93">
-											<i class="fa fa-github fa-2x"></i>
-										</span>
-										<p>See it on Github</p>
-									</a>
-								</div>
-								</div>
-							</div>
-						</div>
-						<div class="column is-mobile is-half-tablet is-one-third-desktop">
-							<div class="box" id="project-box">
-								<figure class="image">
-									<img src="img/resource-finder.png">
-								</figure>
-								<h2 class="title is-3"><a href="https://github.com/ZachMarcus/Resource-Finder">Resource Finder</a></h2>
-								<p class="subtitle is-6">At the 2017 Hardware Hackathon hosted by Northeastern University, I teamed up with 3 friends to develop Resource-Finder. It's a proof of concept for a simple interface that helps students find campus resources, but we demonstrated it by tracking in real time the location and status of the web-app user as well as every printer on campus; we also set up a reflective IR sensor along a desk to determine when the seat at that desk became available. The project involved web scrapers, networking, communication over XBee radios, and a simple web service. We took home first place!</p>
-								<a class="button is-large is-white" href="https://github.com/ZachMarcus/Resource-Finder">
-									<span class="icon" style="color:#00ad93">
-										<i class="fa fa-github fa-2x"></i>
-									</span>
-									<p>See it on Github</p>
-								</a>
-							</div>
-						</div>
-						<div class="column is-mobile is-half-tablet is-one-third-desktop">
-							<div class="box" id="project-box">
-								<figure class="image">
-									<img src="img/rise-poster.jpg">
-								</figure>
-								<h2 class="title"><a href="https://github.com/ZachMarcus/RSA-Native-On-Android">Side Channel Analysis</a></h2>
-								<p class="subtitle is-6">I worked on an Android application and set of executables to perform encryption on mobile devices' Graphics Processing Units to assist in developing side channel analysis techniques against a specific tablet's chipset. The work we did on this - setting up a framework and showing some initial results - led to a poster that was presented at Northeastern's Research, Innovation, and Scholarship Expo, where myself and another undergraduate on the team presented our poster to a panel of judges.</p>
-								<a class="button is-large is-white" href="https://github.com/ZachMarcus/RSA-Native-On-Android">
-									<span class="icon" style="color:#00ad93">
-										<i class="fa fa-github fa-2x"></i>
-									</span>
-									<p>See it on Github</p>
-								</a>
-							</div>
-						</div>
-						<div class="column is-mobile is-half-tablet is-one-third-desktop">
-							<div class="box" id="project-box">
-								<figure class="image">
-									<img src="img/hp-helion.jpg">
-								</figure>
-								<h2 class="title"><a href="https://devpost.com/software/helionhack">Boston City View</a></h2>
-								<p class="subtitle is-6">HP hosted a hackathon in August 2015, with the stipulation that the product run entirely on their cloud hosting service. So our small team of 3 cooked up a simple Python webapp, displaying the data provided by https://data.boston.gov/ overlaid onto an interactive map of Boston. We used k-means clustering to display the data as a heat map, showing hotspots of differing data, like how crime rates correlated with property values in an area.</p>
-								<a class="button is-large is-white" href="https://github.com/ZachMarcus/HelionHack">
-									<span class="icon" style="color:#00ad93">
-										<i class="fa fa-github fa-2x"></i>
-									</span>
-									<p>See it on Github</p>
-								</a>
-							</div>
-						</div>
-						<div class="column is-mobile is-half-tablet is-one-third-desktop">
-							<div class="box" id="project-box">
-								<figure class="image">
-									<img src="img/piano-lights.jpg">
-								</figure>
-								<h2 class="title"><a href="https://devpost.com/software/piano-lights">MakeBU Piano Lights</a></h2>
-								<p class="subtitle is-6">In March of 2015, I attended my first hackathon, accompanying three other friends to the MakeBU Hackathon. There, we designed, writed, and programmed a device to help learn songs on the piano; our product was an untethered piece of hardware to be placed on any standard-sized piano, with lights indicating which keys needed to be pressed next. I aided in designing the hardware, using the 3D printer, and in wiring. At the end of the 24 hours, we finished, I dubbed it "Piano Lights", and we walked away with first place.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="about-text">
+                <h3>Software Engineer <a href="https://www.google.com/" class="google-ref">@Google <img class="logo google-logo" alt="" src="img/google.svg"></a></h3>
+                <!--<h3>Previously 
+                    <a href="https://facebook.com" class="fb-ref">@Facebook <img class="logo fb-logo" alt="" src="img/fb.svg"></a>
+                    <a href="https://www.ll.mit.edu/" class="mit-ref">@MIT Lincoln Laboratory <img class="logo mit-logo" alt="" src="img/mit.svg"></a>
+                    <a href="https://www.amd.com/" class="amd-ref">@Advanced Micro Devices <img class="logo amd-logo" alt="" src="img/amd.svg"></a>
+                </h3>-->
+                <h3>B.S. Computer Engineering '18 <a href="https://www.northeastern.edu/" class="neu-ref">Northeastern University <img class="logo neu-logo" alt="" src="img/neu.svg"></a></h3>
+            </div>
 
-			<section class="section hero is-fullheight is-primary is-bold has-nice-link">
-				<div id="work-experience" class="container has-text-centered">
-					<h1 class="title is-2">Work Experience</h1>
-					<br>
-					<div class="columns is-multiline">
-						<div class="column is-mobile is-half-tablet is-half-desktop">
-							<div class="box">
-								<figure class="image">
-									<img src="img/mitll.jpg">
-								</figure>
-								<h2 class="title is-3"><a href="https://www.ll.mit.edu/">MIT Lincoln Laboratory</a></h2>
-								<p class="subtitle is-6">My last co-op was at Lincoln Laboratory from January - September 2017, writing and evaluating large scale parallel applications, giving me a thorough understanding of multi-process and multithreading paradigms. I supported the development of novel radar signal processing techniques, improving their performance enough to demonstrate their viability. Throughout that work, I had the change to leverage and directly contribute to several communication libraries.</p>
-							</div>
-						</div>
-						<div class="column is-mobile is-half-tablet is-half-desktop">
-							<div class="box">
-								<figure class="image">
-									<img src="img/amd.jpg">
-								</figure>
-								<h2 class="title is-3"><a href="https://www.amd.com/">Advanced Micro Devices, Inc.</a></h2>
-								<p class="subtitle is-6">My first co-op was at Advanced Micro Devices (AMD) from January 2016 - August 2016, working on the shader compiler team there. I designed a tool to simplify driver performance analysis and to provide dynamic analysis of applications' run-time information. My contributions to the team consisted of both team infrastructure and compiler performance work. If you play games on AMD hardware, including the XBox One and the PlayStation 4, I've contributed directly to the drivers running on it.</p>
-							</div>
-						</div>
-						<div class="column is-mobile is-half-tablet is-half-desktop is-centered">
-							<div class="box">
-								<figure class="image">
-									<img src="img/nucar.jpg">
-								</figure>
-								<h2 class="title is-3"><a href="http://www.ece.neu.edu/groups/nucar/">Northeastern University Computer Architecture Research Laboratory</a></h2>
-								<p class="subtitle is-6">I started working in the Northeastern University Computer Architecture Research Laboratory in May 2015, and have been a part of it in some capacity since then. At first, the work involved an Android application and set of executables to perform encryption on mobile devices' Graphics Processing Units to assist in developing side channel analysis techniques against a specific tablet's chipset. I also expanded an Android application for simplified GPU benchmarking, porting a benchmark suite designed for heterogeneous computing architectures. <br>With the lab's support, I've since started participating in several yearly student cluster competitions, as seen <a class="smoothScroll" href="#projects">here.</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</div>
-	</body>
-	<script>
-		// handle links with @href starting with '#' only
-		$(document).on('click', 'a[href^="#"]', function(e) {
-		    // target element id
-		    var id = $(this).attr('href');
-		    // target element
-		    var $id = $(id);
-		    if ($id.length === 0) {
-		        return;
-		    }
-		    // prevent standard hash navigation (avoid blinking in IE)
-		    e.preventDefault();
-		    // top position relative to the document
-		    var pos = $id.offset().top;
-		    // now calculate the offset for the navbar
-		    pos = pos - $("#nav-top").height() - 18;
-		    // animated top scrolling
-		    $('body, html').animate(
-		    	{scrollTop: pos},
-		    	1100 /* duration */,
-		    	"easeInOutCubic" /* jquery ui easing function */,
-		    	function() {} /* empty callback */
-		    );
-		});
-    </script>
+            <ul class="social-icon">
+                <li><a href="zachary_marcus_resume.pdf"><i class="fa fa-download" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/zachmarcus"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/zacharyjmarcus"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="mailto:zacharyjmarcus@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+    </header>
+</div>
+
+<div class="right-col-block blocks">
+<div class="theiaStickySidebar">
+
+<section class="section-wrapper section-experience gray-bg">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title"><h2>Work Experience</h2></div>
+            </div>
+            <!-- TODO: add resume to right of this -->
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>March 2019 - Present</small>
+                    <h3>Google | Google Cloud</h3>
+                    <h4>Software Engineer II</h4>
+                    <p>Sunnyvale, CA</p>
+                </div>
+                <div class="content-item">
+                    <small>April 2018 - August 2018</small>
+                    <h3>Google | ChromeOS</h3>
+                    <h4>Software Engineering Intern</h4>
+                    <p>Mountain View, CA</p>
+                </div>
+                <div class="content-item">
+                    <small>January 2018 - March 2018</small>
+                    <h3>Facebook | Infrastructure</h3>
+                    <h4>Software Engineering Intern</h4>
+                    <p>Menlo Park, CA</p>
+                </div>
+                <div class="content-item">
+                    <small>January 2017 - September 2017</small>
+                    <h3>MIT Lincoln Laboratory | Embedded Systems</h3>
+                    <h4>Software Engineering Co-op</h4>
+                    <p>Lexington, MA</p>
+                </div>
+                <div class="content-item">
+                    <small>January 2016 - August 2016</small>
+                    <h3>Advanced Micro Devices | Shader Compiler</h3>
+                    <h4>Software Engineering Co-op</h4>
+                    <p>Boxborough, MA</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+Project ideas
+IRIS
+side channel analysis
+tersoff paper (separate)
+supercomputing
+planetary lander
+Resource Finder
+boston city view
+makebu piano lights
+Parallel Algos
+Music Player
+
+How to display these? 
+ - Squeezebox - maybe
+ - carousel - no
+ - normally, picture and title; on hover, overlay text
+
+-->
+<section class="section-wrapper portfolio-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">Iris Realtime Interactive Streaming (IRIS)</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Description here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">Side Channel Analysis Research</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Description here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">Supercomputing Competitions</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Description here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">Tersoff: Computational Chemistry Paper</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Description here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">Planetary Lander</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Description here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">Parallel Algorithm Implementations</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Description here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">Music Player</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Music Player and Editor for CS 3500 Object-Oriented Design. Java and Swing-based controls and GUI, with the ability to compose and play MIDI files.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">NEU Hardware Hacks: Resource Finder</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Northeastern's hardware hackathon. <a href="https://github.com/ZachMarcus/Resource-Finder">Designed a monitor for university resources</a>, including using a printer security flaw to track printer availability / usage and sensors for library seat availability. 1st place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">HPE Hacks: Boston City View</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">HPE cloud hackathon where we <a href="https://github.com/ZachMarcus/HelionHack">built a site to display public Boston data</a> using k-means clustering over an interactive map, showing inequality factors. Hosting and computation done using HPE services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div class="portfolio-thing">
+                    <div class="portfolio-wrap">
+                        <h2 class="portfolio-title">MakeBU: Piano Lights</h2>
+                        <img class="portfolio-img" src="http://placehold.it/257x200.jpg"/>
+                        <div class="portfolio-description">
+                            <p class="portfolio-text">Boston U. hackathon where we <a href="https://devpost.com/software/piano-lights">designed a device to make learning piano easier</a>. Featured Arduino-controlled LEDs in a custom-printed casing and a Java-based companion app for music management. 1st place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div><!-- Sticky -->
+</div><!-- .right-col-block -->
+</div><!-- .columns-block -->
+</div><!-- #main-wrapper -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/theia-sticky-sidebar.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>

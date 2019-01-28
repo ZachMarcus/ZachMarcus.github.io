@@ -1,0 +1,510 @@
+/*------------------------------------------------------------------
+# [Color codes]
+
+# Body  (text): #3a4750
+# Heading Color #444444
+# Theme Color (link color) #82b541
+# Mid grey (sub header) #f4f4f4
+# -------------------------------------------------------------------*/
+
+body {
+    font-family : 'Hind', sans-serif;
+    font-size   : 15px;
+    line-height : 1.8em;
+    color       : #3d3d50;
+    font-weight : 300;
+    /*background  : url("../img/pattern-bg.png") fixed;*/
+    background: url("../img/trianglify.svg") fixed;
+    }
+
+
+/* --------------------------------------
+ * Logos
+ *------------------------------------------*/
+.logo {
+    margin-left: .15em;
+    width: 1.2em;
+}
+
+.google-logo {
+    width: 1.28em
+}
+
+.google-ref {
+    color: #0F9D58
+}
+
+.fb-logo {
+    width: 1.2em;
+}
+
+.fb-ref {
+    color: #38569E;
+}
+
+.mit-logo {
+    width: 1.2em;
+}
+
+.mit-ref {
+    color: #000080;
+}
+
+.amd-logo {
+    width: 1.4em;
+}
+
+.amd-ref {
+    color: #11975F;
+}
+
+.neu-logo {
+    width: 1.2em;
+}
+
+.neu-ref {
+    color: #CC0000;
+}
+
+
+/* --------------------------------------
+ * Global Typography
+ *------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin : 0 0 15px;
+    color  : #2b2b3d;
+    }
+
+h1 {
+    font-size   : 26px;
+    line-height : 1.8em;
+    font-weight : 700;
+    }
+
+h2 {
+    font-size   : 18px;
+    line-height : 1.8em;
+    font-weight : 700;
+    }
+
+h3 {
+    font-size   : 16px;
+    line-height : 1.8em;
+    font-weight : 500;
+    }
+
+h4 {
+    font-size   : 15px;
+    line-height : 1.8em;
+    font-weight : 500;
+    }
+
+h5 {
+    font-size   : 15px;
+    line-height : 1.5em;
+    font-weight : 500;
+    }
+
+h6 {
+    font-size   : 15px;
+    line-height : 1.5em;
+    }
+
+/* --------------------------------------
+ * LINK STYLE
+ *------------------------------------------*/
+a {
+    color              : #FFC107;
+    text-decoration    : none;
+    -webkit-transition : all 0.3s ease 0s;
+    -moz-transition    : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition         : all 0.3s ease 0s;
+    }
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration : none;
+    outline         : none
+    }
+
+a:hover,
+a:focus {
+    text-decoration : none;
+    color           : #ff9800;
+    }
+
+p {
+    margin-bottom : 20px;
+    }
+
+ul {
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+    }
+
+/*------------------
+ * Button Style
+ *------------------*/
+.btn {
+    padding        : 14px 30px 11px;
+    margin-bottom  : 0;
+    font-size      : 14px;
+    font-weight    : 500;
+    border-radius  : 0;
+    border         : 0;
+    text-transform : uppercase;
+    }
+
+.btn-lg {
+    font-weight : 700;
+    font-size   : 24px;
+    padding     : 15px 30px;
+    }
+
+/*btn-primary*/
+.btn-primary {
+    background-color : #FFC107;
+    }
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus {
+    background : #ff9800;
+    }
+
+/*btn-default*/
+.btn-default {
+    color            : #2a54f5;
+    background-color : transparent;
+    border           : 2px solid #2a54f5;
+    }
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active:focus {
+    background   : #2a54f5;
+    color        : #ffffff;
+    border-color : #2a54f5;
+    }
+
+button:focus,
+.btn:focus,
+.btn:active:focus {
+    outline : none;
+    }
+
+/* --------------------
+ * Column Block
+ * -------------------*/
+
+.columns-block {
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-flex-direction : row;
+    flex-direction         : row;
+    margin                 : 60px auto;
+    padding                : 0;
+    box-shadow             : 0 0 0 1px #eaeaea;
+    }
+
+.blocks {
+    box-sizing : border-box;
+    }
+
+.left-col-block {
+    overflow     : hidden;
+    -webkit-flex : 1 0 0;
+    flex         : 1 0 0;
+    position     : relative;
+    background   : rgba(255, 255, 255, 1);
+    border-right : 1.5px solid #eaeaea;
+    }
+
+.right-col-block {
+    -webkit-flex : 2 0 0;
+    flex         : 2 0 0;
+    position     : relative;
+    background   : #ffffff;
+    }
+
+@media (max-width : 768px) {
+
+    .columns-block {
+        display    : block;
+        margin     : 0;
+        box-shadow : none;
+        }
+
+    .left-col-block {
+        width    : 100%;
+        position : relative;
+        border   : 0;
+        }
+
+    .right-col-block {
+        width      : 100%;
+        position   : relative;
+        box-shadow : none;
+        }
+    }
+
+@media (min-width : 769px) and (max-width : 1024px) {
+    .columns-block {
+        margin-top    : 30px;
+        margin-bottom : 30px;
+        }
+    }
+
+/* --------------------
+ * Section Background
+ * -------------------*/
+.gray-bg {
+    background-color : #ffffff;
+    }
+
+/* --------------------
+ *  main Wrapper
+ * -------------------*/
+#main-wrapper {
+    overflow : hidden;
+    }
+
+/*-------------------
+ * Section Wrapper
+ *-------------------*/
+.section-wrapper {
+    padding       : 50px;
+    border-bottom : 1px solid #eaeaea;
+    }
+
+@media (max-width : 480px) {
+    .section-wrapper {
+        padding : 30px 20px;
+        }
+    }
+
+/*-----------------------------
+ * NAVIGATION & HEADER STYLE
+ *-----------------------------*/
+
+.header {
+    padding  : 20px !important;
+    margin   : 0;
+    position : relative;
+    }
+
+.profile-img {
+    width: 15em;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.header .profile-img {
+    margin-bottom : 1.2em;
+    }
+
+.header .content-wrapper {
+
+    }
+
+.header .content {
+    width  : 100%;
+    margin : 0 auto;
+    }
+
+.header .content h1 {
+    line-height : 1;
+    margin      : 0 0 5px;
+    }
+
+.header .content .lead {
+    font-size : 18px;
+    }
+
+.header .content .about-text {
+    margin : 10px 0;
+    }
+
+.header .btn {
+    margin-top : 40px;
+    }
+
+@media (max-width : 768px) {
+    .header {
+        padding       : 0;
+        text-align    : center;
+        border-bottom : 1px solid #ededed;
+        }
+
+    .header img {
+        margin : 0 auto;
+        }
+
+    .header .content {
+        padding : 50px;
+        }
+    }
+
+/* Header Sticky */
+.sticky {
+    position : -webkit-sticky;
+    position : sticky;
+    top      : 0;
+    }
+
+/*-------------------
+ * Social Icon
+ *-------------------*/
+.social-icon {
+    margin  : 20px 0;
+    padding : 0;
+    display : block;
+    }
+
+.social-icon li {
+    display : inline-block;
+    margin  : 0 2px;
+    }
+
+.social-icon li a {
+    display       : block;
+    font-size     : 12px;
+    color         : #333333;
+    width         : 34px;
+    height        : 34px;
+    line-height   : 33px;
+    text-align    : center;
+    border-radius : 2px;
+    border        : 2px solid #eeeeee;
+    }
+
+.social-icon li a:hover {
+    border-color : #cccccc;
+    }
+
+/*-------------------
+ * Portfolio
+ * https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering
+ *-------------------*/
+
+.portfolio-wrap {
+    position: relative;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 62, 206, 0.91);
+    color: #ffffff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition effect */
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+/* hover for desktop, active selector for mobile use */
+.portfolio-wrap:hover .portfolio-description, .portfolio-wrap:active .portfolio-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-text {
+    transition: 0.75s;
+    transform: translateY(1em);
+    text-align: center;
+}
+
+/* hover for desktop, active selector for mobile use */
+.portfolio-wrap:hover .portfolio-text, .portfolio-wrap:active .portfolio-text {
+    transform: translateY(0);
+}
+
+.portfolio-thing {
+    margin-bottom: 2em;
+}
+
+.portfolio-title {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+/*-------------------
+ * Content Item (Work Experience)
+ *-------------------*/
+
+.content-item {
+    margin-bottom : 40px;
+    }
+
+.content-item h3 {
+    margin         : 0 0 10px;
+    line-height    : 1;
+    font-weight    : bold;
+    text-transform : uppercase;
+    }
+
+.content-item h4 {
+    margin      : 0;
+    line-height : 1;
+    }
+
+.content-item small {
+    color : #888888;
+    }
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+#preloader {
+    background : rgba(255, 255, 255,.8);
+    bottom     : 0;
+    left       : 0;
+    position   : fixed;
+    right      : 0;
+    top        : 0;
+    z-index    : 9999;
+    }
+
+#status,
+.status-mes {
+    background-image    : url(../img/preloader.svg);
+    background-position : center;
+    background-repeat   : no-repeat;
+    height              : 200px;
+    left                : 50%;
+    margin              : -100px 0 0 -100px;
+    position            : absolute;
+    top                 : 50%;
+    width               : 200px;
+    }
+
+.status-mes {
+    background : none;
+    left       : 0;
+    margin     : 0;
+    text-align : center;
+    top        : 65%;
+    }
