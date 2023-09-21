@@ -1,23 +1,14 @@
-/* eslint-env browser */
-(function () {
-	'use strict';
-	// Burger menu toggle
-	var burger = document.querySelector('.nav-toggle');
-	var menu = document.querySelector('.nav-menu');
-	burger.addEventListener('click', function () {
-		burger.classList.toggle('is-active');
-		menu.classList.toggle('is-active');
-	});
-})();
+let header = document.querySelector("header");
+let scroll1 = window.scrollY;
 
-(function () {
-	'use strict';
-
-	function hideScrollHint() {
-		if (window.scrollY > 300) {
-			document.removeEventListener('scroll', hideScrollHint);
-			document.querySelector('#scroll-hint').classList.add('hidden');
-		}
-	}
-	document.addEventListener('scroll', hideScrollHint, {passive: true});
-})();
+document.addEventListener("scroll", () => {
+  if (this.scrollY >= 160 && this.screenY <= 1500) {
+    if (scroll1 > this.scrollY) {
+      header.style.top = "0px";
+      scroll1 = this.scrollY;
+    } else {
+      header.style.top = "-100px";
+      scroll1 = this.scrollY;
+    }
+  }
+});

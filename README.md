@@ -1,5 +1,3 @@
-﻿# [zmarcus.com](https://www.zmarcus.com)
+Zachary Marcus's github.io-hosted page
 
-> Personal website for Zachary Marcus
-
-*The website targets the latest version of Chrome, Safari, and Firefox.*
+https://zmarcus.com
